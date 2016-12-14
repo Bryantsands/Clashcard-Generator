@@ -15,9 +15,9 @@ BasicFlashcard.prototype.printInfo = function(){
 
 // new basicFlashcard object is initialized to nextcard and is provided with the variables
 // necessary to create all of the properties
-// var newCard = new BasicFlashcard("who is the president", "obama");
+var newCard = new BasicFlashcard("who is the president", "obama");
 
-// newCard.printInfo(); 
+newCard.printInfo(); 
 
 
 

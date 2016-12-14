@@ -1,0 +1,23 @@
+{
+  "name": "bryantsands",
+  "version": "1.0.0",
+  "description": "flashcards",
+  "main": "BasicFlashcard.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bryantsands/Clashcard-Generator.git"
+  },
+  "author": "BryantSands",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bryantsands/Clashcard-Generator/issues"
+  },
+  "homepage": "https://github.com/Bryantsands/Clashcard-Generator#readme",
+  "dependencies": {
+    "file-system": "^2.2.2",
+    "inquirer": "^2.0.0"
+  }
+}

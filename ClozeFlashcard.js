@@ -10,7 +10,7 @@ function ClozeFlashcard(text,cloze){
         newCloze = "text: " + this.text + "\nCloze" + this.cloze
 console.log(newCloze)
     }
-fs.appendFile("UserSave.txt", this.storeCloze, (err) =>{
+fs.appendFile("UserSave.txt", this.newCloze, (err) =>{
     if(err) throw err;
     console.log("data saved")
 

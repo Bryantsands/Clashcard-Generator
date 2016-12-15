@@ -12,16 +12,14 @@ inquirer.prompt([
     {
         type:"input",
         name:"question",
-        message:"Pick your Question: ",
+        message:"Pick your Question: "
         
     },
     {
         type:"input",
         name:"answer",
-        message:"The answer is: ",
+        message:"The answer is: "
     }
-    
-
 ]).then(function (answers){
     //if Basic was chosen
     if(answers.chosen === "Basic"){

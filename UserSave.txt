@@ -1,0 +1,34 @@
+q a
+question answer
+a b
+b h
+undefined undefined
+question answer
+cloze q cloze a
+cq ca
+cq ca
+q1 a1
+basic basic
+question answer
+basic basic
+question answer
+que ans
+question answer
+cl cl
+slka aksjdf
+asdij aisdhv
+aijdsv akndsv
+basic basic
+close cloze
+qq aa
+qq aa
+undefined undefined
+basic1  basice2
+undefined undefined
+basic  basic a
+undefined undefined
+basickkkk balkda
+undefined undefined
+akhsdvih aknsdv
+oaihsd aidsbji
+aoisdb aisdboi

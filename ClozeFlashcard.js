@@ -7,16 +7,12 @@ function ClozeFlashcard(text,cloze){
     };
 
     this.printInfo = function(){
-        newCloze = "text: " + this.text + "\nCloze" + this.cloze
-console.log(newCloze)
-    }
-fs.appendFile("UserSave.txt", this.newCloze, (err) =>{
-    if(err) throw err;
-    console.log("data saved")
-
-});
+          console.log("Cloze Question: " + this.text + "\nCloze: " + this.cloze)
+    };
    
- };
- ClozeFlashcard()
+};
+   
+ 
+ ClozeFlashcard();
 
- module.exports = (ClozeFlashcard);
+ module.exports = ClozeFlashcard;

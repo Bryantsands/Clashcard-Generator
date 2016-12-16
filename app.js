@@ -1,12 +1,14 @@
 var inquirer = require('inquirer');
 var fs = require('fs');
-
+var BasicFlashcard = require("./BasicFlashcard");
+var ClozeFlashcard = require("./ClozeFlashcard")
 
 inquirer.prompt([
+    
     {
         type:"list",
         message:"Which card would you like to make",
-        choice:["Basic" , "Cloze"],
+        choices:["Basic" , "Cloze"],
         name:"chosen"
     },
     {
@@ -22,22 +24,18 @@ inquirer.prompt([
     }
 ]).then(function (answers){
     //if Basic was chosen
-    if(answers.chosen === "Basic"){
+    if(answers.chosen === "Basic"){    
         var  bCard = new BasicFlashcard(answers.question, answers.answer);
         bCard.printInfo();
-        console.log("chose basic");
         fs.appendFile("UserSave.txt", answers.question +  " " + answers.answer + "\n");
-    }else{
+    }else{ //if Cloze was chosen
         var cCard = new ClozeFlashcard(answers.question, answers.answer);
         cCard.printInfo();
-        console.log("chose Cloze")
-        fs.appendFile("UserSave.txt", answers.text + " " + answers.cloze + "\n");
+        fs.appendFile("UserSave.txt", answers.question + " " + answers.answer + "\n");
     }
-    
+  
 });
 
     
-    // newRes.printInfo();
-    // newClozeFlashcard.printInfo();
-
+   
 
